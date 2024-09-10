@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sempre Doce - Confeitaria</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_index.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sempre Doce</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('cardapio') }}">Cardápio</a></li>
+                    <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                    <li><a href="{{ url_for('contato') }}">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Bem-vindo à Sempre Doce!</h2>
+            <p>Delícias que adoçam o seu dia.</p>
+        </section>
+        <section class="destaques">
+            <h2>Produtos em Destaque:</h2>
+            <div class="card">
+                <img src="https://www.receitasnestle.com.br/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/4f012df686c9759da04453742d8f3360.webp?itok=-Z7HzoYm" alt="Doce 1">
+                <h3>Bolo Red Velvet</h3>
+                <p>O Bolo Red Velvet é um bolo de textura muito leve e macia, levemente amanteigado e com um discreto sabor a chocolate. </p>
+            </div>
+            <div class="card">
+                <img src="https://www.receitasnestle.com.br/sites/default/files/styles/full_width_image_1920x795_/public/oembed_thumbnails/iSybpW_EYkZhg_EU5mRw4HxAnMi1Y5Mc_2NnLq1L7Qw.jpg?itok=mNv2T5Kr" alt="Doce 2">
+                <h3>Bolo Vulcão Brigadeiro</h3>
+                <p>Bolo Brigadeiro é um bolo fofinho de chocolate, recheado e coberto com puro brigadeiro e lascas de chocolate ao leite.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sempre Doce. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
